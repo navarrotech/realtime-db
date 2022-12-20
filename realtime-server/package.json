@@ -1,0 +1,27 @@
+{
+  "name": "realtime-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev:server": "nodemon test/server.js",
+    "dev:client": "webpack build --config ./test/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ioredis": "^5.2.4",
+    "nanoid": "^4.0.0",
+    "socket.io": "^4.5.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "socket.io-client": "^4.5.4",
+    "uuid": "^9.0.0"
+  }
+}
